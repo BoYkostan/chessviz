@@ -1,0 +1,11 @@
+# Ignored files
+*.*
+main
+
+# Exceptions
+!main.cpp
+!.clang-format
+!README.md
+!Makefile
+!.gitignore
+
