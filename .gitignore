@@ -1,11 +1,9 @@
-# Ignored files
-*.*
-main
-
-# Exceptions
-!main.cpp
-!.clang-format
-!README.md
-!Makefile
-!.gitignore
-
+#Objects files
+*.o
+#backup-files using txt editor 
+.main.c.swp
+main.c~
+*.exe
+#main.c#
+prob.cpp
+ *.stackdump
