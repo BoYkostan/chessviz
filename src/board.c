@@ -87,7 +87,7 @@ int white_pawn(char deck[8][8], int move[]) {
        (move[3] == move[1] - 1 || (move[1] == 6 && move[3] == 4))) || 
       (move[3] == move[1] - 1 &&
        (move[2] == move[0] + 1 || move[2] == move[0] - 1) && 
-       deck[move[3]][move[2]]>='a' && deck[move[3]][move[2]]<='z')) {
+       deck[move[3]][move[2]] >= 'a' && deck[move[3]][move[2]] <= 'z')) {
     make_move(deck, move);
     return 0;
   } else 
