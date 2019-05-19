@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Werror -std=c99
+CFLAGS = -Wall -Werror
 CC = gcc
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 MKDIR_BUILD = mkdir -p build/src
