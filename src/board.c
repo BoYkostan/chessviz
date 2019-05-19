@@ -65,17 +65,17 @@ void make_move(char deck[8][8], int move[]) {
 }
 
 void reformat_input(char *input, int move[4]) {
-  move[0] = input[0]-'a';
-  move[1] = 8-(input[1]-'0');
-  move[2] = input[3]-'a';
-  move[3] = 8-(input[4]-'0');
+  move[0] = input[0] - 'a';
+  move[1] = 8 - (input[1] - '0');
+  move[2] = input[3] - 'a';
+  move[3] = 8 - (input[4] - '0');
 }
 int black_pawn(char deck[8][8], int move[]) {
   if ((move[2] == move[0] && deck[move[3]][move[2]] == ' ' &&
        (move[3] == move[1] + 1 || (move[1] == 1 && move[3] == 3))) || 
       (move[3] == move[1] + 1 &&
-       (move[2] == move[0] + 1 || move[2] == move[0]-1) && 
-       deck[move[3]][move[2]]>='A' && deck[move[3]][move[2]]<='Z')) {
+       (move[2] == move[0] + 1 || move[2] == move[0] - 1) && 
+       deck[move[3]][move[2]] >= 'A' && deck[move[3]][move[2]] <= 'Z')) {
     make_move(deck, move);
     return 0;
   } else 
@@ -89,7 +89,7 @@ int white_pawn(char deck[8][8], int move[]) {
        (move[2] == move[0] + 1 || move[2] == move[0] - 1) && 
        deck[move[3]][move[2]]>='a' && deck[move[3]][move[2]]<='z')) {
     make_move(deck, move);
-      return 0;
-    } else 
-      return 1;
+    return 0;
+  } else 
+    return 1;
 }

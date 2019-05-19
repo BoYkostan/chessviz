@@ -4,7 +4,7 @@
 int main() {
   char deck[8][8];
   board_game(deck);
-  while(1) {
+  while (1) {
     board_print_plain(deck);
     board(deck);
   }
