@@ -29,3 +29,4 @@ $(obj4): $(way4)
 clean:
 	rm -rf build/*.o
 	rm -rf *.o
+	rm -rf bin/chessviz
